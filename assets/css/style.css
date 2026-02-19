@@ -69,20 +69,75 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
-  z-index: 997;
-  transition: all 0.5s;
-  height: 80px;
-  background: rgba(25, 28, 31, 0.8);
+/* ===== MODERN NAVBAR ===== */
+
+.header-modern{
+  position:fixed;
+  left:0;
+  width:100%;
+  z-index:999;
+  display:flex;
+  justify-content:center;
 }
 
-#header.header-transparent {
-  background: transparent;
+.nav-container{
+  width:85%;
+  max-width:1200px;
+  background:rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  padding:18px 30px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-#header.header-scrolled {
-  height: 60px;
-  background: rgba(25, 28, 31, 0.8);
+/* logo */
+.logo{
+  font-size:22px;
+  font-weight:700;
+  color:#2f6f5e;
+  letter-spacing:1px;
+}
+
+/* nav links */
+.nav-menu a{
+  margin:0 14px;
+  text-decoration:none;
+  color:#555;
+  font-weight:500;
+  position:relative;
+  transition:.3s;
+}
+
+.nav-menu a:hover{
+  color:#2f6f5e;
+}
+
+/* active underline */
+.nav-menu a.active::after{
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  left:0;
+  width:100%;
+  height:3px;
+  background:#2f6f5e;
+  border-radius:5px;
+}
+
+/* icons */
+.nav-icons a{
+  margin-left:15px;
+  font-size:20px;
+  color:#444;
+  transition:.3s;
+}
+
+.nav-icons a:hover{
+  color:#2f6f5e;
 }
 
 /*--------------------------------------------------------------
@@ -134,7 +189,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffb727;
+  color: #2f6f5e;
 }
 
 .navbar .dropdown ul {
@@ -907,8 +962,8 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #f3a200;
-  border-color: #ffb727;
+  color: #2f6f5e;
+  border-color: #2f6f5e;
 }
 
 .portfolio .portfolio-item {
@@ -1386,8 +1441,24 @@ section {
 --------------------------------------------------------------*/
 /* HERO MODERN */
 .hero-modern{
+  position:relative;
   padding:120px 0;
-  background:linear-gradient(120deg,#eaf5f1,#ffffff);
+  background-image:url("../img/hero-bg.png") !important;
+  background-size:cover !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+}
+
+.hero-modern::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0);
+}
+
+.hero-modern .container{
+  position:relative;
+  z-index:2;
 }
 
 .hello{
@@ -1425,11 +1496,12 @@ section {
   border-radius:8px;
 }
 
-.hero-img{
-  width:320px;
-  border-radius:50%;
-  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+.hero-img {
+  width: 320px;
+  border-radius: 25px;   /* softer rounded corners */
+  object-fit: cover;
 }
+
 
 .tech-stack-box{
   background:#E0F0ED;
@@ -1458,7 +1530,7 @@ section {
 }
 
 .exp-card{
-  background:white;
+  background: #EFF7F2;
   padding:25px;
   border-radius:20px;
   box-shadow:0 5px 25px rgba(0,0,0,0.05);
@@ -1479,28 +1551,6 @@ section {
   margin-top:15px;
 }
 
-/* .tags span{
-  display:inline-flex;
-  align-items:center;
-  background:#e4f4ef;
-  padding:8px 16px;
-  border-radius:25px;
-  margin:5px 5px 0 0;
-  font-size:13px;
-  font-weight:500;
-  transition:0.2s;
-}
-
-.tags span i{
-  margin-right:6px;
-  font-size:14px;
-}
-
-.tags span:hover{
-  background:#cdebe2;
-  transform:translateY(-2px);
-} */
-
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -1513,14 +1563,14 @@ section {
   align-items: center;
   justify-content: center;
 
-  min-width: 130px;       /* Equal width */
-  height: 40px;           /* Equal height */
+  min-width: 160px;       /* Equal width */
+  height: 45px;           /* Equal height */
 
   padding: 0 12px;
   border-radius: 10px;
 
-  background: #e4f4ef;
-  font-size: 13px;
+  background: white;
+  font-size: 16px;
   font-weight: 500;
 
   transition: 0.2s ease;
@@ -1535,4 +1585,60 @@ section {
 .tags span:hover{
   background:#cdebe2;
   transform:translateY(-2px);
+}
+
+.btn-view-code {
+  background-color: #335A47;
+  color: white;
+  width: 180px;
+  height: 45px;
+}
+
+.btn-view-project {
+  background-color: #E1F1B8;
+  width: 180px;
+  height: 45px;
+}
+
+ul.tick-list {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+}
+
+ul.tick-list li {
+  position: relative;
+  padding-left: 25px; /* space for the tick */
+  margin-bottom: 10px;
+}
+
+ul.tick-list li::before {
+  content: "\2713"; /* Unicode check mark ✓ */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4C8854; /* green color */
+  font-weight: bold;
+}
+
+/* ===== Project Buttons Fix ===== */
+
+.project-buttons .btn {
+  display: inline-flex;          /* use flex */
+  align-items: center;           /* vertical center */
+  justify-content: center;       /* horizontal center */
+  height: 45px;                  /* fixed height */
+  padding: 0 22px;               /* remove top/bottom padding */
+  line-height: normal;           /* reset bootstrap line-height */
+  font-weight: 500;
+}
+
+/* Remove hover effect for project buttons */
+.btn-view-code:hover {
+  background-color: #335A47 !important;
+  color: #fff !important;
+}
+
+.btn-view-project:hover {
+  background-color: #4C8854 !important;
+  color: #fff !important;
 }

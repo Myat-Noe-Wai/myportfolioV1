@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Laura Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Laura Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Laura
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+    <!-- =======================================================
+    * Template Name: Laura
+    * Updated: May 30 2023 with Bootstrap v5.3.0
+    * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
 
 <body>
-
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex justify-content-center align-items-center ">
-
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-        <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <li><a class="nav-link scrollto" href="#resume">Experience</a></li>      
-        <li><a class="nav-link scrollto" href="#personalprojects">My Personal Projects</a></li>
-        <li><a class="nav-link scrollto " href="#certificate">Certificates</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-
-  </header><!-- End Header -->
+  <header id="header" class="header-modern">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        MYAT NOE WAI
+      </div>
+  
+      <!-- Nav -->
+      <nav class="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Work Experience</a>
+        <a href="#personalprojects">Projects</a>
+        <a href="#certificate">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+  
+      <!-- Social -->
+      <div class="nav-icons">
+        <a href="https://github.com/Myat-Noe-Wai/employee-management-system"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/myat-noe-wai-21671321a/"><i class="bi bi-linkedin"></i></a>
+      </div>  
+    </div>  
+  </header>  
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->  
-  <section class="hero-modern d-flex align-items-center">
+  <section id="home" class="hero-modern d-flex align-items-center home">
     <div class="container">
       <div class="row align-items-center">
   
@@ -65,7 +74,7 @@
           <h1 class="name">Myat Noe Wai</h1>
   
           <h3 class="title">
-            Java Backend Developer | Spring Boot | REST APIs | MySQL
+            Java Spring Boot Developer | REST APIs | MySQL | Spring Security
           </h3>
   
           <p class="subtitle">
@@ -81,7 +90,7 @@
               <i class="bi bi-download me-2"></i> Download Resume
             </a>
           
-            <a href="#personalprojects" class="btn btn-outline-dark">
+            <a href="#personalprojects" class="btn btn-view-project">
               <i class="bi bi-folder2-open me-2"></i> View Projects
             </a>
           
@@ -93,9 +102,8 @@
   
         <!-- Right -->
         <div class="col-lg-5 text-center">
-          <img src="assets/img/my profile.jpg" class="hero-img">
+          <img src="assets/img/my profile3.png" class="hero-img">
         </div>
-  
       </div>
     </div>
   </section>  
@@ -135,12 +143,26 @@
               <span><i class="bi bi-shield-lock" style="font-size: 22px;"></i> Spring Security</span>
               <span><i class="bi bi-database" style="font-size: 22px;"></i> JPA</span>
               <span><i class="bi bi-layers" style="font-size: 22px;"></i> Hibernate</span>
-              <span><i class="bi bi-server" style="font-size: 22px;"></i> MySQL</span>
-              <span><i class="bi bi-server" style="font-size: 22px;"></i> PostgreSQL</span>
+              <span>
+                <img src="assets/img/android.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                Android (Java)
+              </span>
+              <span>
+                <img src="assets/img/java.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                Java GWT
+              </span>
               <span><i class="bi bi-filetype-html" style="font-size: 22px;"></i> HTML</span>
-              <span><i class="bi bi-filetype-css" style="font-size: 22px;"></i> CSS</span>
-              <span><i class="bi bi-filetype-js" style="font-size: 22px;"></i> JavaScript</span>
+              <span>
+                <img src="assets/img/extension.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                CSS
+              </span>
+              <span>
+                <img src="assets/img/js.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                JavaScript
+              </span>
               <span><i class="bi bi-bootstrap" style="font-size: 22px;"></i> Bootstrap</span>
+              <span><i class="bi bi-database" style="font-size: 22px;"></i> MySQL</span>
+              <span><i class="bi bi-server" style="font-size: 22px;"></i> PostgreSQL</span>
               <span>
                 <img src="assets/img/react.png" alt="" style="width:16px; height:16px; vertical-align:middle; margin-right:4px;">
                 React
@@ -166,7 +188,7 @@
               <h4>Java Backend Developer (Freelance)</h4>
               <span class="company">RUISI International Co., Ltd [July 2025 - Dec 2025]</span>
             
-              <ul>
+              <ul class="tick-list">
                 <li>Working on the backend development of medical applications using Spring Boot, Spring Security and JWT-based authentication.</li>
                 <li>Designed and implemented RESTful APIs for core modules such as patient registration, appointment booking, and reports.</li>
                 <li>Integrated WebSocket (STOMP) for real-time notifications on appointment events.</li>
@@ -191,7 +213,7 @@
               <h4>Product Support Engineer (Remote)</h4>
               <span class="company">Digital Laboratory Co, Ltd — [Oct 2020 - Apr 2022]</span>
             
-              <ul>
+              <ul class="tick-list">
                 <li>Answered customer's tech inquiries about the partner company's Cloud Softwares by email.</li>
                 <li>Created 7 README Digital technological guide books in Japanese(PagerDuty, Sumologic, Smartsheet, etc)</li>
                 <li>Created user manual documentation for the usage of the partner company's Cloud Softwares.</li>
@@ -207,7 +229,7 @@
               <h4>Software Developer (Frontend & Backend)</h4>
               <span class="company">SM Engineering — [May 2022 - Apr 2025]</span>
             
-              <ul>
+              <ul class="tick-list">
                 <li>Developed and maintained scalable web application using Java-based framework (Google Web Toolkit).</li>
                 <li>Maintained and enhanced POS web and Android applications using LitElement and Android (Java).</li>
                 <li>Integrated REST APIs into web and Android applications to implement new features and reports.</li>
@@ -219,7 +241,10 @@
               </ul>
             
               <div class="tags">
-                <span><i class="bi bi-cpu"></i> Java GWT</span>
+                <span>
+                  <img src="assets/img/java.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                  Java GWT
+                </span>
                 <span>
                   <img src="assets/img/php.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
                   PHP
@@ -228,8 +253,14 @@
                 <span><i class="bi bi-database"></i> MySQL</span>
                 <span><i class="bi bi-plug"></i> REST API</span>
                 <span><i class="bi bi-filetype-html" style="font-size: 22px;"></i> HTML</span>
-                <span><i class="bi bi-filetype-css" style="font-size: 22px;"></i> CSS</span>
-                <span><i class="bi bi-filetype-js" style="font-size: 22px;"></i> JavaScript</span>
+                <span>
+                  <img src="assets/img/extension.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                  CSS
+                </span>
+                <span>
+                  <img src="assets/img/js.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                  JavaScript
+                </span>
                 <span><i class="bi bi-bootstrap" style="font-size: 22px;"></i> Bootstrap</span>
               </div>              
             </div>
@@ -237,7 +268,7 @@
               <h4>Junior Mobile Developer</h4>
               <span class="company">Digital Laboratory Co, Ltd — [Feb 2018 - Nov 2018]</span>
             
-              <ul>
+              <ul class="tick-list">
                 <li>Displayed latest articles from different websites(Music, Fashion, Movie, etc) in both android and iOS app.</li>
                 <li>This project is created using Xamarin framework and C#, Android Java and Objective-C.</li>
                 <li>Adjusted tab width to be same size and added shadow below each tab at the menu bar.</li>
@@ -247,10 +278,19 @@
               </ul>
             
               <div class="tags">
-                <span><i class="bi bi-cpu"></i> C#</span>
-                <span><i class="bi bi-cpu"></i> Android</span>
+                <span>
+                  <img src="assets/img/c-sharp.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                  C#
+                </span>
+                <span>
+                  <img src="assets/img/android.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                  Android (Java)
+                </span>
                 <span><i class="bi bi-database"></i> MySQL</span>
-                <span><i class="bi bi-cpu"></i> Xamarin form</span>
+                <span>
+                  <img src="assets/img/xamarin.png" alt="" style="width: 23px; height: 23px; vertical-align:middle; margin-right:4px;">
+                  Xamarin form
+                </span>
               </div>              
             </div>                                 
           </div>
@@ -272,7 +312,7 @@
               <h4>Employee Management System</h4>
               <span class="company">Java Spring Boot | Spring Security | JPA | Hibernate | React</span>
             
-              <ul>
+              <ul class="tick-list">
                 <li>Employee Management System with role-based access (Admin & Employee) to streamline HR operations.</li>
                   <li>Admin features include dashboards, employee & job title management, attendance tracking with auto status calculation, leave request management, advanced filtering, pagination, and Excel/PDF exports.</li>
                   <li>Employees can mark time in/out, track daily and monthly attendance, view remaining leave, and submit leave requests.</li>
@@ -290,12 +330,12 @@
               <div class="project-buttons mt-3">
                 <a href="https://github.com/Myat-Noe-Wai/employee-management-system"
                    target="_blank"
-                   class="btn btn-dark btn-sm me-2">
-                   <i class="bi bi-github me-1"></i> View Code
+                   class="btn btn-view-code me-2">
+                   <i class="bi bi-download me-1"></i> View Code
                 </a>              
                 <a href="http://13.61.161.105/login"
                    target="_blank"
-                   class="btn btn-success btn-sm">
+                   class="btn btn-view-project">
                    <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
                 </a>
               </div>              
@@ -306,7 +346,7 @@
               <h4>Student Management System</h4>
               <span class="company">Java Spring MVC | MySQL | JSP</span>
             
-              <ul>
+              <ul class="tick-list">
                 <li>Developed a role-based student management system using Spring MVC, Thymeleaf, and MySQL.</li>
                 <li>Admins can manage students, teachers, courses, users, and course enrollment, while students can mark attendance, view attendance history, and check upcoming class schedules.</li>                  
                 <li>Developed with 
@@ -318,8 +358,8 @@
               <div class="project-buttons mt-3">
                 <a href="https://github.com/Myat-Noe-Wai/student-management-system"
                    target="_blank"
-                   class="btn btn-dark btn-sm me-2">
-                   <i class="bi bi-github me-1"></i> View Code
+                   class="btn btn-view-code me-2">
+                   <i class="bi bi-download me-1"></i> View Code
                 </a>              
                 <!-- <a href="http://13.61.161.105/login"
                    target="_blank"
@@ -332,7 +372,7 @@
               <h4>Clinic Management System</h4>
               <span class="company">Java Spring MVC | MySQL | JSP</span>
             
-              <ul>
+              <ul class="tick-list">
                 <li>Developed a clinic management system which allows to make
                   appointment for patients, manage patient’s records (view, edit,
                   delete), store patient’s diseases and prescription history, manage
@@ -349,8 +389,8 @@
               <div class="project-buttons mt-3">
                 <a href="https://github.com/Myat-Noe-Wai/clinic-management-system"
                    target="_blank"
-                   class="btn btn-dark btn-sm">
-                   <i class="bi bi-github me-1"></i> View Code
+                   class="btn btn-view-code">
+                   <i class="bi bi-download me-1"></i> View Code
                 </a>
               </div>              
             </div>                                 
@@ -459,6 +499,30 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-menu a");
+    
+    window.addEventListener("scroll", () => {
+      let current = "";
+    
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.clientHeight;
+    
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+    
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
